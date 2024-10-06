@@ -22,4 +22,4 @@ def safe_divide(numerator, denominator):
 
     finally : 
 
-        print(f"The result of the division is {result}")
+        print("The result of the division is {:.1f}".format(result))
