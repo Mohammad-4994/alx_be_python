@@ -1,19 +1,25 @@
 # Adding function for safe division 
 
-def safe_divide(numerator, denominator):
+def safe_divide():
 
     try :
         
-        float(numerator) = input("Enter numerator value: ")
-        float(denominator) = input("Enter denominator value: ")
+        numerator = float(input("Enter numerator value: "))
+        denominator = float(input("Enter denominator value: "))
+        result =  numerator / denominator
        
-    except ZeroDivisionError : print("Error: Cannot divide by zero.")
+    except ZeroDivisionError : 
+        print("Error: Cannot divide by zero.")
+        result = None
 
-    except ValueError : print("Error: Please enter numeric values only.")
+    except ValueError : 
+        print("Error: Please enter numeric values only.")
+        result = None
 
     else :
-        result =  numerator / denominator
+        
         print("The division is Safe")
+       
 
     finally : 
 
