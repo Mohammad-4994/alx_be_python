@@ -1,13 +1,12 @@
 # Adding function for safe division 
 
-def safe_divide():
+def safe_divide(numerator, denominator):
 
     try :
         
-        numerator = float(input("Enter numerator value: "))
-        denominator = float(input("Enter denominator value: "))
-        result =  numerator / denominator
-       
+       float (numerator , denominator)
+       result =  numerator / denominator
+               
     except ZeroDivisionError : 
         print("Error: Cannot divide by zero.")
         result = None
