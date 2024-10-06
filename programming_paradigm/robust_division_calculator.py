@@ -15,11 +15,12 @@ def safe_divide(numerator, denominator):
         print("Error: Please enter numeric values only.")
         # result = None
 
-    else :
+    # else :
         
-        print("The division is Safe")
+    #     print("The division is Safe")
        
 
     finally : 
 
-        print("The result of the division is {:.1f}".format(numerator/denominator))
+        # print("The result of the division is {:.1f}".format(numerator/denominator))
+        print(f"The result of the division is {numerator/denominator}")
