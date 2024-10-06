@@ -4,7 +4,8 @@ def safe_divide(numerator, denominator):
 
     try :
         
-       float (numerator , denominator)
+       float (numerator) 
+       float (denominator)
        result =  numerator / denominator
                
     except ZeroDivisionError : 
