@@ -1,6 +1,6 @@
 # Adding function for safe division 
 
-def safe_divide ():
+def safe_divide(numerator, denominator):
 
     try :
         
@@ -12,7 +12,7 @@ def safe_divide ():
     except ValueError : print("Error: Please enter numeric values only.")
 
     else :
-        result = numerator / denominator 
+        result =  numerator / denominator
         print("The division is Safe")
 
     finally : 
