@@ -6,28 +6,28 @@ class BankAccount:
 
         self.account_balance = 0 
 
-    def deposit(self):
-
-        amount = input("Enter the amount for deposit: ")
+    def deposit(self,amount):
 
         if amount >= self.account_balance :
 
             self.account_balance = amount
 
-        else : print ("Invalid ammount , please add valid amount")
+        else : print ("Insufficient funds.")
 
-    def withdraw(self) : 
 
-        amount = input("Enter the amount for withdraw: ")
+    def withdraw(self,amount) : 
 
-        if amount <= self.account_balance : 
+        if amount > self.account_balance : 
 
-            return self.account_balance - amount
+            return False
         
-        else : return False 
+        else : 
 
+            self.account_balance -= amount  
+
+            return True     
+       
 
     def display_balance(self) :
 
         print(f"Current Balance: {self.account_balance}") 
-    
