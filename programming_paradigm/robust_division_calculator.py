@@ -4,8 +4,8 @@ def safe_divide(numerator, denominator):
 
     try :
         
-        numerator = float(input("Enter numerator value: "))
-        denominator = float(input("Enter denominator value: "))
+        float(numerator) = input("Enter numerator value: ")
+        float(denominator) = input("Enter denominator value: ")
        
     except ZeroDivisionError : print("Error: Cannot divide by zero.")
 
