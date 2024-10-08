@@ -14,4 +14,4 @@ def safe_divide(numerator, denominator):
 
     finally : 
 
-        print(f"The result of the division is {float(numerator)/float(denominator):.1f} ")
+        print(f"The result of the division is {float(numerator)/float(denominator): .1f}")
