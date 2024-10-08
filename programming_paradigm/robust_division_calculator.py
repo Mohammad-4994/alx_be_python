@@ -23,4 +23,4 @@ def safe_divide(numerator, denominator):
     finally : 
 
         # print("The result of the division is {:.1f}".format(numerator/denominator))
-        print(f"The result of the division is {numerator/denominator}")
+        print(f"The result of the division is {numerator/denominator:.1f}")
