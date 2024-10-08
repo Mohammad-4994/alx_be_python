@@ -5,22 +5,17 @@ def safe_divide(numerator, denominator):
     try :
         
        float(numerator), float(denominator)
-    #    result =  numerator / denominator
+       result =  float(numerator) / float(denominator)
                
     except ZeroDivisionError : 
         print("Error: Cannot divide by zero.")
-        # result = None
+        result = None
 
     except ValueError : 
         print("Error: Please enter numeric values only.")
-        # result = None
-
-    # else :
-        
-    #     print("The division is Safe")
-       
+        result = None
+    
 
     finally : 
 
-        # print("The result of the division is {:.1f}".format(numerator/denominator))
-        print(f"The result of the division is {numerator/denominator:.1f}")
+        print(f"The result of the division is {float(numerator)/float(denominator):.1f}")
