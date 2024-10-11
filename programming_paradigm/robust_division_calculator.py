@@ -4,7 +4,7 @@ def safe_divide(numerator, denominator):
 
     try :
        result = float(numerator) / float(denominator)
-       print(f"The result of the division is {float(numerator)/float(denominator):.1f}")
+       return f"The result of the division is {float(numerator)/float(denominator):.1f}"
 
                
     except ZeroDivisionError:
