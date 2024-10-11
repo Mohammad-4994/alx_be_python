@@ -2,16 +2,16 @@
 
 def safe_divide(numerator, denominator):
 
+    try :
         
-    float(numerator), float(denominator)
-
-    if denominator == 0 :
-   
+       float(numerator) , float(denominator)
+               
+    except  ZeroDivisionError :
         print("Error: Cannot divide by zero.")
 
-    elif type(numerator) or type(denominator) == str : 
+    except ValueError :
         print("Error: Please enter numeric values only.")    
 
-    else : 
+    finally : 
 
-        print(f"The result of the division is {float(numerator)/float(denominator): .1f}")
+        print(f"The result of the division is {float(numerator)/float(denominator):.1f}")
