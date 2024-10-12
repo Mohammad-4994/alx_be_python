@@ -1,4 +1,4 @@
-class Book : 
+class Book: 
 
     def __init__(self , title , author ,year ) : 
 
@@ -13,7 +13,7 @@ class Book :
     
     def __str__(self): 
         
-        return f"{self.title} by {self.author} , published in {self.year}"
+        return f"{self.title} by {self.author}, published in {self.year}"
         
 
     def __repr__(self): 
