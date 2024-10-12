@@ -2,13 +2,13 @@ class Calculator:
 
     calculation_type = "Arithmetic Operations"
 
-    @staticmethod
+    @classmethod
     def multiply(cls, a, b):
 
         return a * b
     
 
-    @classmethod
+    @staticmethod
     def add(a, b):
 
         return a + b 
